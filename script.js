@@ -50,6 +50,25 @@ firework_animation.addEventListener("click",function fire_works_animation(){
         
     })
 
+    let arrow_animation = document.querySelector(".arrow_animation");
+
+
+    arrow_animation.addEventListener("mouseover",function arrow_animation_function(){
+        let arrow_img=document.getElementById("project_3_img")
+        arrow_animation.style.opacity="100"
+        arrow_img.style.opacity="0"
+        arrow_animation.style.cursor="pointer"
+    })
+
+
+    arrow_animation.addEventListener("mouseout",function arrow_animation_function(){
+        let arrow_img=document.getElementById("project_3_img")
+        arrow_animation.style.opacity="0"
+        arrow_img.style.opacity="100"
+        
+    })
+
+
     // slider script
 
     let btn = document.getElementById("btn");
